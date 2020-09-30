@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using the Split method</title>
+</head>
+<body>
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li><a href="replace.html">replace</a></li>
+         <li><a href="split.html">split</a></li>
+         <li><a href="charcodeAt.html">charcodeAt</a></li>
+         <li> <a href="search.html">search</a></li>
+         <li><a href="uppercase.html">uppercase</a></li>
+         <li><a href="trim.html">trim</a></li>
+         <li><a href="slice.html">slice</a></li>
+         <li><a href="Tostring.html">Tostring</a></li>
+         <li><a href="startwith.html">startwith</a></li>
+         <li><a href="match.html">match</a></li>
+         <li><a href="include.html">include</a></li>
+         <li><a href="repeat.html">repeat</a></li>
+         <li><a href="lowercase.html">lowercaser</a></li>
+         <li><a href="substring.html">substring</a></li>
+         <li><a href="valuesof.html">valuesof</a></li>
+         <li><a href="lastindex.html">lastindex</a></li>
+     </ul>
+     
+
+    <p>The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call</p>
+    
+    <script>
+
+let str = 'The quick brown fox jumps over the lazy dog.';
+
+let words = str.split(' ');
+document.write(words[3]);
+// expected output: "fox"
+
+let chars = str.split('');
+document.write(chars[8]);
+// expected output: "k"
+
+const strCopy = str.split();
+document.write(strCopy);
+// expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+    </script>
+
+
+</body>
+</html>

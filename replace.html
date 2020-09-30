@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Methods</title>
+</head>
+<body>
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li><a href="replace.html">replace</a></li>
+         <li><a href="split.html">split</a></li>
+         <li><a href="charcodeAt.html">charcodeAt</a></li>
+         <li> <a href="search.html">search</a></li>
+         <li><a href="uppercase.html">uppercase</a></li>
+         <li><a href="trim.html">trim</a></li>
+         <li><a href="slice.html">slice</a></li>
+         <li><a href="Tostring.html">Tostring</a></li>
+         <li><a href="startwith.html">startwith</a></li>
+         <li><a href="match.html">match</a></li>
+         <li><a href="include.html">include</a></li>
+         <li><a href="repeat.html">repeat</a></li>
+         <li><a href="lowercase.html">lowercaser</a></li>
+         <li><a href="substring.html">substring</a></li>
+         <li><a href="valuesof.html">valuesof</a></li>
+         <li><a href="lastindex.html">lastindex</a></li>
+     </ul>
+     
+
+    <p>The replace method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string, and the replacement can be a string or a function to be called for each match. If pattern is a string, only the first occurrence will be replaced.</p>
+
+    <script>
+
+let p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+
+let newrep= /dog/gi;
+
+document.write(p.replace(newrep, 'ferret'));
+// expected output: "The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?"
+
+document.write(p.replace('dog', 'monkey'));
+// expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+
+    </script>
+</body>
+</html>
